@@ -3,6 +3,7 @@ import Footer from "../layout/Footer";
 import PageContent from "../layout/PageContent";
 import data from "../data/data.json";
 import BestSeller from "../components/BestSeller";
+import MostPopular from "../components/MostPopular";
 
 function HomePage() {
   const { hero } = data;
@@ -26,6 +27,7 @@ function HomePage() {
       </section>
       <PageContent />
       <BestSeller/>
+      <MostPopular/>
       <Footer />
     </div>
   );
