@@ -6,7 +6,7 @@ function Header() {
   const { menu } = data;
 
   return (
-    <header className="flex justify-between items-center p-4 shadow-md bg-white">
+    <header className="flex justify-between items-center p-4 shadow-md bg-white  pl-64 pr-64 container mx-auto">
       <h1 className="text-lg font-bold">Bandage</h1>
       <nav>
         <ul className="flex space-x-4">

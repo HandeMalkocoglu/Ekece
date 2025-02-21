@@ -3,7 +3,10 @@
       "title": "GROCERIES DELIVERY",
       "description": "We know how large objects will act, but things on a small scale just do not act that way.",
       "buttonText": "Start Now",
-      "backgroundImage": "/shophero_720.jpg"
+      "backgroundImages": [
+        "/shophero_720.jpg",
+        "/shophero_720.jpg"
+      ]
     },
     "menu": ["Home", "Shop", "About", "Blog", "Contact", "Pages"],
     "pageContent": [
@@ -349,7 +352,39 @@
       }
       ]
 },
-           
+  "featuredPosts": {
+    "sectionTitle": "Featured Posts",
+    "sectionSubtitle": "Practice Advice",
+    "posts": [
+      {
+        "id": 1,
+        "image": "/featured1.png",
+        "tags": ["Google", "Trending", "New"],
+        "title": "Loudest à la Madison #1 (L'integral)",
+        "description": "We focus on ergonomics and meeting you where you work. It's only a keystroke away.",
+        "date": "22 April 2021",
+        "comments": 10
+      },
+      {
+        "id": 2,
+        "image": "/featured2.png",
+        "tags": ["Google", "Trending", "New"],
+        "title": "Loudest à la Madison #1 (L'integral)",
+        "description": "We focus on ergonomics and meeting you where you work. It's only a keystroke away.",
+        "date": "22 April 2021",
+        "comments": 10
+      },
+      {
+        "id": 3,
+        "image": "/featured3.png",
+        "tags": ["Google", "Trending", "New"],
+        "title": "Loudest à la Madison #1 (L'integral)",
+        "description": "We focus on ergonomics and meeting you where you work. It's only a keystroke away.",
+        "date": "22 April 2021",
+        "comments": 10
+      }
+    ]
+  }, 
     "footer": {
       "agency": {
         "title": "Consulting Agency For Your Business",
