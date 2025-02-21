@@ -1,17 +1,10 @@
 import data from "../data/data.json";
-const MostPopular = () => {
-  const { title, description, product, features, image } = data.mostPopular;
+const MostPopularProducts = () => {
+  const { title, description, features } = data.mostPopular;
+  const {image, product} = data.mostPopularProducts;
   return (
     <section className="pl-62 pr-62 container mx-auto px-6 py-8 grid grid-cols-1  gap-8 items-center">
-      {/* SOL GÖRSEL */}
-      <div>
-        <img
-          src={image}
-          alt="Delivery"
-          className="w-full h-auto rounded-lg object-cover"
-        />
-      </div>
-      {/* SAĞ BÖLÜM */}
+      {/* SOL BÖLÜM */}
       <div className=" pl-10 max-w-2xs flex flex-col items-center space-y-4">
         <h2 className="text-xl font-bold uppercase text-gray-800">{title}</h2>
         <p className="text-gray-500 text-center">{description}</p>
@@ -23,12 +16,21 @@ const MostPopular = () => {
             className="w-60 h-40 object-cover rounded-lg"
           />
             <p className="text-gray-800 font-bold pt-16">{product.department}</p>
+            <p className="text-gray-400 pt-6">{product.sell}</p>
             <div className="flex items-center space-x-2 pt-6">
             <p className="text-gray-400 line-through">${product.price}</p>
             <p className="text-green-500 font-semibold">${product.discountPrice}</p>
             </div>
           </div>
         </div>
+        {/* SAĞ GÖRSEL */}
+<div>
+        <img
+          src={image}
+          alt="Delivery"
+          className="w-full h-auto rounded-lg object-cover"
+        />
+      </div>
       {/* ALT ÖZELLİKLER */}
       <div className="col-span-2 grid grid-cols-1 md:grid-cols-4 gap-6 mt-6">
   {features.map((feature, index) => (
@@ -42,8 +44,10 @@ const MostPopular = () => {
       </div>
     </div>
   ))}
+  
 </div>
+
     </section>
   );
 };
-export default MostPopular;
+export default MostPopularProducts;

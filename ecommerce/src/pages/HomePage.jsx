@@ -4,6 +4,9 @@ import PageContent from "../layout/PageContent";
 import data from "../data/data.json";
 import BestSeller from "../components/BestSeller";
 import MostPopular from "../components/MostPopular";
+import BestSellerProducts from "../components/BestSellerProducts";
+import MostPopularProducts from "../components/MostPopularProducts";
+import BestSellerProductCard from "../components/BestSellerProductCard";
 
 function HomePage() {
   const { hero } = data;
@@ -28,6 +31,9 @@ function HomePage() {
       <PageContent />
       <BestSeller/>
       <MostPopular/>
+      <BestSellerProducts/>
+      <MostPopularProducts/>
+      <BestSellerProductCard/>
       <Footer />
     </div>
   );

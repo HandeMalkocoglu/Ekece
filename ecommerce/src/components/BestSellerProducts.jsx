@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react";
 import data from "../data/data.json";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi"; // React ikonları için
-const BestSeller = () => {
-  const { categories, products,banner } = data.bestSellers;
+const BestSellerProducts = () => {
+  const { categories, products} = data.bestSellers;
+  const {banner} = data.bestSellersProducts;
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [filteredProducts, setFilteredProducts] = useState([]);
   // Seçili kategoriyi al
@@ -27,20 +28,8 @@ const BestSeller = () => {
     );
   };
   return (
-    <section className="pr-64 pl-64 container mx-auto px-4 py-10 flex flex-col md:flex-row gap-6">
-      {/* SOL KATEGORİ BANNER'I */}
-      <div className="w-full md:w-3/7 relative">
-        <img
-          src={banner.image}
-          alt="Category Banner"
-          className="w-full h-full object-cover rounded-lg shadow-md"
-        />
-        <div className="absolute top-6 left-6 text-black font-bold">
-          <h3 className="text-sm uppercase">{banner.category}</h3>
-          <p className="text-xs text-gray-500">{banner.itemsCount}</p>
-        </div>
-      </div>
-      {/* SAĞ ÜRÜN LİSTESİ */}
+    <section className="pr-62 pl-62 container mx-auto px-4 py-10 flex flex-col md:flex-row gap-6">
+      {/* SOL ÜRÜN LİSTESİ */}
       <div className="w-full md:w-3/4">
         {/* Kategori Başlığı ve Oklar */}
         <div className="flex justify-between items-center border-b pb-2 relative">
@@ -109,7 +98,19 @@ const BestSeller = () => {
           ))}
         </div>
       </div>
+      {/* SAĞ KATEGORİ BANNER'I */}
+      <div className="w-full md:w-3/7 relative">
+        <img
+          src={banner.image}
+          alt="Category Banner"
+          className="w-full h-full object-cover rounded-lg shadow-md"
+        />
+        <div className="absolute top-6 left-6 text-black font-bold">
+          <h3 className="text-sm uppercase">{banner.category}</h3>
+          <p className="text-xs text-gray-500">{banner.itemsCount}</p>
+        </div>
+      </div>
     </section>
   );
 };
-export default BestSeller;
+export default BestSellerProducts;
