@@ -7,6 +7,7 @@ import MostPopular from "../components/MostPopular";
 import BestSellerProducts from "../components/BestSellerProducts";
 import MostPopularProducts from "../components/MostPopularProducts";
 import BestSellerProductCard from "../components/BestSellerProductCard";
+import LogoCarousel from "../components/LogoCarousel";
 
 function HomePage() {
   const { hero } = data;
@@ -34,6 +35,7 @@ function HomePage() {
       <BestSellerProducts/>
       <MostPopularProducts/>
       <BestSellerProductCard/>
+      <LogoCarousel/>
       <Footer />
     </div>
   );

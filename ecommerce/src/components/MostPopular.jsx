@@ -2,7 +2,7 @@ import data from "../data/data.json";
 const MostPopular = () => {
   const { title, description, product, features, image } = data.mostPopular;
   return (
-    <section className="pl-62 pr-62 container mx-auto px-6 py-8 grid grid-cols-1  gap-8 items-center">
+    <section className="pl-64 pr-64 container mx-auto px-6 py-8 grid grid-cols-1  gap-8 items-center">
       {/* SOL GÖRSEL */}
       <div>
         <img

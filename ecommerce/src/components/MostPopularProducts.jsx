@@ -3,7 +3,7 @@ const MostPopularProducts = () => {
   const { title, description, features } = data.mostPopular;
   const {image, product} = data.mostPopularProducts;
   return (
-    <section className="pl-62 pr-62 container mx-auto px-6 py-8 grid grid-cols-1  gap-8 items-center">
+    <section className="pl-64 pr-64 container mx-auto px-6 py-8 grid grid-cols-1  gap-8 items-center">
       {/* SOL BÖLÜM */}
       <div className=" pl-10 max-w-2xs flex flex-col items-center space-y-4">
         <h2 className="text-xl font-bold uppercase text-gray-800">{title}</h2>

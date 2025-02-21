@@ -327,6 +327,28 @@
         "image": "/product-cover-4.png"
       }] 
 },
+"logos": {
+  "banner":[
+      {
+    "image": "/company1.png"
+      },
+      {
+    "image": "/company2.png"
+      },
+      {
+    "image": "/company3.png"
+      },
+      {
+    "image": "/company4.png"
+      },
+      {
+    "image": "/company5.png"
+      },
+      {
+    "image": "/company6.png"
+      }
+      ]
+},
            
     "footer": {
       "agency": {

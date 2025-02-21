@@ -28,7 +28,7 @@ const BestSellerProducts = () => {
     );
   };
   return (
-    <section className="pr-62 pl-62 container mx-auto px-4 py-10 flex flex-col md:flex-row gap-6">
+    <section className="pr-64 pl-64 container mx-auto px-4 py-10 flex flex-col md:flex-row gap-6">
       {/* SOL ÜRÜN LİSTESİ */}
       <div className="w-full md:w-3/4">
         {/* Kategori Başlığı ve Oklar */}
