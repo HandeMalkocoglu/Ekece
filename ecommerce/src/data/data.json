@@ -1,0 +1,217 @@
+{
+    "hero": {
+      "title": "GROCERIES DELIVERY",
+      "description": "We know how large objects will act, but things on a small scale just do not act that way.",
+      "buttonText": "Start Now",
+      "backgroundImage": "/shophero_720.jpg"
+    },
+    "menu": ["Home", "Shop", "About", "Blog", "Contact", "Pages"],
+    "pageContent": [
+      {
+        "tag": "Your Space",
+        "title": "Unique Life",
+        "description": "Explore Items",
+        "image": "/baner1.png"
+      },
+      {
+        "tag": "Ends Today",
+        "title": "Elements Style",
+        "description": "Explore Items",
+        "image": "/baner2.png"
+      },
+      {
+        "tag": "Ends Today",
+        "title": "Elements Style",
+        "description": "Explore Items",
+        "image": "/baner3.png"
+      }
+    ],
+        "bestSellers": {
+  "banner": {
+    "image": "/furniture.jpg",
+    "category": "FURNITURE",
+    "itemsCount": "5 Items"
+  },
+  "categories": ["Men", "Women", "Accessories"],
+  "products": [
+      {
+        "id": 1,
+        "title": "Graphic Design",
+        "category": "Men",
+        "department": "English Department",
+        "price": "16.48",
+        "discountPrice": "6.48",
+        "image": "/baner1.png"
+      },
+      {
+        "id": 2,
+        "title": "Graphic Design",
+        "category": "Women",
+        "department": "English Department",
+        "price": "16.48",
+        "discountPrice": "6.48",
+        "image": "/baner2.png"
+      },
+      {
+        "id": 3,
+        "title": "Graphic Design",
+        "category": "Accessories",
+        "department": "English Department",
+        "price": "16.48",
+        "discountPrice": "6.48",
+        "image": "/baner3.png"
+      },
+      {
+        "id": 1,
+        "title": "Graphic Design",
+        "category": "Accessories",
+        "department": "English Department",
+        "price": "16.48",
+        "discountPrice": "6.48",
+        "image": "/baner1.png"
+      },
+      {
+        "id": 2,
+        "title": "Graphic Design",
+        "category": "Men",
+        "department": "English Department",
+        "price": "16.48",
+        "discountPrice": "6.48",
+        "image": "/baner2.png"
+      },
+      {
+        "id": 3,
+        "title": "Graphic Design",
+        "category": "Women",
+        "department": "English Department",
+        "price": "16.48",
+        "discountPrice": "6.48",
+        "image": "/baner3.png"
+      },
+      {
+        "id": 1,
+        "title": "Graphic Design",
+        "category": "Women",
+        "department": "English Department",
+        "price": "16.48",
+        "discountPrice": "6.48",
+        "image": "/baner1.png"
+      },
+      {
+        "id": 2,
+        "title": "Graphic Design",
+        "category": "Accessories",
+        "department": "English Department",
+        "price": "16.48",
+        "discountPrice": "6.48",
+        "image": "/baner2.png"
+      },
+      {
+        "id": 3,
+        "title": "Graphic Design",
+        "category": "Men",
+        "department": "English Department",
+        "price": "16.48",
+        "discountPrice": "6.48",
+        "image": "/baner3.png"
+      },
+      {
+        "id": 1,
+        "title": "Graphic Design",
+        "category": "Men",
+        "department": "English Department",
+        "price": "16.48",
+        "discountPrice": "6.48",
+        "image": "/baner1.png"
+      },
+      {
+        "id": 2,
+        "title": "Graphic Design",
+        "category": "Women",
+        "department": "English Department",
+        "price": "16.48",
+        "discountPrice": "6.48",
+        "image": "/baner2.png"
+      },
+      {
+        "id": 3,
+        "title": "Graphic Design",
+        "category": "Accessories",
+        "department": "English Department",
+        "price": "16.48",
+        "discountPrice": "6.48",
+        "image": "/baner3.png"
+      },
+      {
+        "id": 1,
+        "title": "Graphic Design",
+        "category": "Accessories",
+        "department": "English Department",
+        "price": "16.48",
+        "discountPrice": "6.48",
+        "image": "/baner1.png"
+      },
+      {
+        "id": 2,
+        "title": "Graphic Design",
+        "category": "Men",
+        "department": "English Department",
+        "price": "16.48",
+        "discountPrice": "6.48",
+        "image": "/baner2.png"
+      },
+      {
+        "id": 3,
+        "title": "Graphic Design",
+        "category": "Women",
+        "department": "English Department",
+        "price": "16.48",
+        "discountPrice": "6.48",
+        "image": "/baner3.png"
+      },
+      {
+        "id": 1,
+        "title": "Graphic Design",
+        "category": "Women",
+        "department": "English Department",
+        "price": "16.48",
+        "discountPrice": "6.48",
+        "image": "/baner1.png"
+      },
+      {
+        "id": 2,
+        "title": "Graphic Design",
+        "category": "Accessories",
+        "department": "English Department",
+        "price": "16.48",
+        "discountPrice": "6.48",
+        "image": "/baner2.png"
+      },
+      {
+        "id": 3,
+        "title": "Graphic Design",
+        "category": "Men",
+        "department": "English Department",
+        "price": "16.48",
+        "discountPrice": "6.48",
+        "image": "/baner3.png"
+      }
+
+    ]
+},      
+    "footer": {
+      "agency": {
+        "title": "Consulting Agency For Your Business",
+        "description": "The quick fox jumps over the lazy dog",
+        "buttonText": "Contact Us"
+      },
+      "companyInfo": ["About Us", "Carrier", "We are hiring", "Blog"],
+      "legal": ["About Us", "Carrier", "We are hiring", "Blog"],
+      "features": ["Business Marketing", "User Analytic", "Live Chat", "Unlimited Support"],
+      "resources": ["IOS & Android", "Watch a Demo", "Customers", "API"],
+      "contact": ["(480) 555-0103", "4517 Washington Ave.", "debra.holt@example.com"],
+      "socials": ["Facebook", "Twitter", "Instagram"],
+      "copyright": "Made With Love By Finland All Right Reserved"
+    }
+  }
+  
