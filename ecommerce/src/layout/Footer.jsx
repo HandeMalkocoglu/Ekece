@@ -4,7 +4,7 @@ function Footer() {
   const { agency, companyInfo, legal, features, resources, contact, socials, copyright } = data.footer;
 
   return (
-    <footer className="bg-gray-900 text-white py-10">
+    <footer className="bg-[#252B42] text-white py-10 pl-64 pr-64">
       <div className="flex justify-between container mx-auto px-4">
         <div>
           <h3 className="text-xl font-semibold">{agency.title}</h3>

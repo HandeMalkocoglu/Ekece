@@ -77,8 +77,6 @@ function HomePage() {
 </div>
 
 </section>
-
-
       <PageContent />
       <BestSeller />
       <MostPopular />
