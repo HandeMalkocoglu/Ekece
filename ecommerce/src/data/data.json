@@ -44,7 +44,8 @@
         "department": "English Department",
         "price": "16.48",
         "discountPrice": "6.48",
-        "image": "/baner1.png"
+        "image": "/baner1.png",
+        "colors": ["#23a6f0", "#23856d", "#e77c40", "#252b42"]
       },
       {
         "id": 2,
@@ -53,7 +54,8 @@
         "department": "English Department",
         "price": "16.48",
         "discountPrice": "6.48",
-        "image": "/baner2.png"
+        "image": "/baner2.png",
+        "colors": ["#23a6f0", "#23856d", "#e77c40", "#252b42"]
       },
       {
         "id": 3,
@@ -62,142 +64,158 @@
         "department": "English Department",
         "price": "16.48",
         "discountPrice": "6.48",
-        "image": "/baner3.png"
+        "image": "/baner3.png",
+        "colors": ["#23a6f0", "#23856d", "#e77c40", "#252b42"]
       },
       {
-        "id": 1,
+        "id": 4,
         "title": "Graphic Design",
         "category": "Accessories",
         "department": "English Department",
         "price": "16.48",
         "discountPrice": "6.48",
-        "image": "/baner1.png"
+        "image": "/baner1.png",
+        "colors": ["#23a6f0", "#23856d", "#e77c40", "#252b42"]
       },
       {
-        "id": 2,
+        "id": 5,
         "title": "Graphic Design",
         "category": "Men",
         "department": "English Department",
         "price": "16.48",
         "discountPrice": "6.48",
-        "image": "/baner2.png"
+        "image": "/baner2.png",
+        "colors": ["#23a6f0", "#23856d", "#e77c40", "#252b42"]
       },
       {
-        "id": 3,
+        "id": 6,
         "title": "Graphic Design",
         "category": "Women",
         "department": "English Department",
         "price": "16.48",
         "discountPrice": "6.48",
-        "image": "/baner3.png"
+        "image": "/baner3.png",
+        "colors": ["#23a6f0", "#23856d", "#e77c40", "#252b42"]
       },
       {
-        "id": 1,
+        "id": 7,
         "title": "Graphic Design",
         "category": "Women",
         "department": "English Department",
         "price": "16.48",
         "discountPrice": "6.48",
-        "image": "/baner1.png"
+        "image": "/baner1.png",
+        "colors": ["#23a6f0", "#23856d", "#e77c40", "#252b42"]
       },
       {
-        "id": 2,
+        "id": 8,
         "title": "Graphic Design",
         "category": "Accessories",
         "department": "English Department",
         "price": "16.48",
         "discountPrice": "6.48",
-        "image": "/baner2.png"
+        "image": "/baner2.png",
+        "colors": ["#23a6f0", "#23856d", "#e77c40", "#252b42"]
       },
       {
-        "id": 3,
+        "id": 9,
         "title": "Graphic Design",
         "category": "Men",
         "department": "English Department",
         "price": "16.48",
         "discountPrice": "6.48",
-        "image": "/baner3.png"
+        "image": "/baner3.png",
+        "colors": ["#23a6f0", "#23856d", "#e77c40", "#252b42"]
       },
       {
-        "id": 1,
+        "id": 10,
         "title": "Graphic Design",
         "category": "Men",
         "department": "English Department",
         "price": "16.48",
         "discountPrice": "6.48",
-        "image": "/baner1.png"
+        "image": "/baner1.png",
+        "colors": ["#23a6f0", "#23856d", "#e77c40", "#252b42"]
       },
       {
-        "id": 2,
+        "id": 11,
         "title": "Graphic Design",
         "category": "Women",
         "department": "English Department",
         "price": "16.48",
         "discountPrice": "6.48",
-        "image": "/baner2.png"
+        "image": "/baner2.png",
+        "colors": ["#23a6f0", "#23856d", "#e77c40", "#252b42"]
       },
       {
-        "id": 3,
+        "id": 12,
         "title": "Graphic Design",
         "category": "Accessories",
         "department": "English Department",
         "price": "16.48",
         "discountPrice": "6.48",
-        "image": "/baner3.png"
+        "image": "/baner3.png",
+        "colors": ["#23a6f0", "#23856d", "#e77c40", "#252b42"]
       },
       {
-        "id": 1,
+        "id": 13,
         "title": "Graphic Design",
         "category": "Accessories",
         "department": "English Department",
         "price": "16.48",
         "discountPrice": "6.48",
-        "image": "/baner1.png"
+        "image": "/baner1.png",
+        "colors": ["#23a6f0", "#23856d", "#e77c40", "#252b42"]
       },
       {
-        "id": 2,
+        "id": 14,
         "title": "Graphic Design",
         "category": "Men",
         "department": "English Department",
         "price": "16.48",
         "discountPrice": "6.48",
-        "image": "/baner2.png"
+        "image": "/baner2.png",
+        "colors": ["#23a6f0", "#23856d", "#e77c40", "#252b42"]
       },
       {
-        "id": 3,
+        "id": 15,
         "title": "Graphic Design",
         "category": "Women",
         "department": "English Department",
         "price": "16.48",
         "discountPrice": "6.48",
-        "image": "/baner3.png"
+        "image": "/baner3.png",
+        "colors": ["#23a6f0", "#23856d", "#e77c40", "#252b42"]
       },
       {
-        "id": 1,
+        "id": 16,
         "title": "Graphic Design",
         "category": "Women",
         "department": "English Department",
         "price": "16.48",
         "discountPrice": "6.48",
-        "image": "/baner1.png"
+        "image": "/baner1.png",
+        "colors": ["#23a6f0", "#23856d", "#e77c40", "#252b42"]
       },
       {
-        "id": 2,
+        "id": 17,
         "title": "Graphic Design",
         "category": "Accessories",
         "department": "English Department",
         "price": "16.48",
         "discountPrice": "6.48",
-        "image": "/baner2.png"
+        "image": "/baner2.png",
+        "colors": ["#23a6f0", "#23856d", "#e77c40", "#252b42"]
       },
       {
-        "id": 3,
+        "id": 18,
         "title": "Graphic Design",
         "category": "Men",
         "department": "English Department",
         "price": "16.48",
         "discountPrice": "6.48",
-        "image": "/baner3.png"
+        "image": "/baner3.png",
+        "colors": ["#23a6f0", "#23856d", "#e77c40", "#252b42"]
       }
 
     ]
