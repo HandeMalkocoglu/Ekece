@@ -19,14 +19,17 @@ function Header() {
           ))}
         </ul>
       </nav>
-      <div className="flex space-x-4">
-        <div className="flex items-center space-x-1">
-          <FaUser className="text-blue-500" />
-          <span className="text-blue-500">Login/Register</span>
-        </div>
-        <FaShoppingCart className="text-blue-500" />
-        <FaSearch className="text-blue-500" />
-        <FaHeart className="text-blue-500" />
+      <div className="flex space-x-4 ml-[90px] items-center">
+        {/* Login/Register Butonu */}
+        <Link to="/roles">
+          <button className="flex items-center space-x-2 bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition">
+            <FaUser />
+            <span>Login/Register</span>
+          </button>
+        </Link>
+        <FaShoppingCart className="text-blue-500 cursor-pointer" />
+        <FaSearch className="text-blue-500 cursor-pointer" />
+        <FaHeart className="text-blue-500 cursor-pointer" />
       </div>
     </header>
   );
