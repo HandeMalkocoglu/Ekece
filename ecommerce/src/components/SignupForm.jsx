@@ -50,10 +50,10 @@ export default function SignupForm() {
 
       console.log("Gönderilen veri:", payload);
 
-      const response = await api.post("/signup", payload);
+      await api.post("/signup", payload);
 
       alert("Hesabınızı etkinleştirmek için e-postadaki bağlantıya tıklamanız gerekiyor!");
-      navigate(-1);
+      navigate("/login");
     } catch (error) {
       console.error("Sunucu Hata Yanıtı:", error.response?.data);
       alert(`Hata: ${error.response?.data?.message || "Bilinmeyen hata oluştu"}`);
@@ -61,24 +61,28 @@ export default function SignupForm() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-r from-blue-50 to-blue-100">
+    <div className="bg-gradient-to-br from-blue-50 to-blue-100 min-h-screen">
       <Header />
-      <div className="flex items-center justify-center min-h-screen">
-        <div className="bg-white p-8 rounded-2xl shadow-lg w-full max-w-lg">
-          <h2 className="text-3xl font-bold text-center text-gray-800 mb-6">Kayıt Ol</h2>
-          <form onSubmit={handleSubmit(onSubmit)} className="space-y-5">
+      <div className="flex items-center justify-center min-h-screen pt-20">
+        <div className="bg-white p-10 rounded-3xl shadow-2xl w-full max-w-md transition-all hover:scale-[1.02]">
+          <h2 className="text-3xl font-bold text-center text-gray-900 mb-6">Kayıt Ol</h2>
+          <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
             <div>
-              <label className="block font-medium text-gray-700">Ad</label>
-              <input type="text" {...register("name", { required: "Bu alan zorunludur", minLength: 3 })} className="border border-gray-300 rounded-lg w-full p-3 focus:ring-2 focus:ring-blue-400 focus:outline-none" />
-              {errors.name && <p className="text-red-500 text-sm">{errors.name.message}</p>}
+              <label className="block text-gray-700 font-semibold mb-1">Ad</label>
+              <input type="text" {...register("name", { required: "Bu alan zorunludur", minLength: 3 })} 
+                className="border border-gray-300 rounded-xl w-full p-3 focus:ring-2 focus:ring-blue-400 focus:outline-none transition-all duration-300"
+              />
+              {errors.name && <p className="text-red-500 text-sm mt-1">{errors.name.message}</p>}
             </div>
             <div>
-              <label className="block font-medium text-gray-700">E-posta</label>
-              <input type="email" {...register("email", { required: "Bu alan zorunludur", pattern: /^[^@]+@[^@]+\.[^@]+$/ })} className="border border-gray-300 rounded-lg w-full p-3 focus:ring-2 focus:ring-blue-400 focus:outline-none" />
-              {errors.email && <p className="text-red-500 text-sm">{errors.email.message}</p>}
+              <label className="block text-gray-700 font-semibold mb-1">E-posta</label>
+              <input type="email" {...register("email", { required: "Bu alan zorunludur", pattern: /^[^@]+@[^@]+\.[^@]+$/ })} 
+                className="border border-gray-300 rounded-xl w-full p-3 focus:ring-2 focus:ring-blue-400 focus:outline-none transition-all duration-300"
+              />
+              {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email.message}</p>}
             </div>
             <div>
-              <label className="block font-medium text-gray-700">Şifre</label>
+              <label className="block text-gray-700 font-semibold mb-1">Şifre</label>
               <input type="password" {...register("password", {
                 required: "Bu alan zorunludur",
                 minLength: { value: 8, message: "En az 8 karakter olmalı" },
@@ -86,19 +90,23 @@ export default function SignupForm() {
                   value: /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]+$/,
                   message: "Şifre büyük harf, küçük harf, rakam ve özel karakter içermelidir",
                 },
-              })} className="border border-gray-300 rounded-lg w-full p-3 focus:ring-2 focus:ring-blue-400 focus:outline-none" />
-              {errors.password && <p className="text-red-500 text-sm">{errors.password.message}</p>}
+              })} className="border border-gray-300 rounded-xl w-full p-3 focus:ring-2 focus:ring-blue-400 focus:outline-none transition-all duration-300"
+              />
+              {errors.password && <p className="text-red-500 text-sm mt-1">{errors.password.message}</p>}
             </div>
             <div>
-              <label className="block font-medium text-gray-700">Şifre Doğrula</label>
+              <label className="block text-gray-700 font-semibold mb-1">Şifre Doğrula</label>
               <input type="password" {...register("confirmPassword", {
                 validate: (value) => value === password || "Şifreler eşleşmiyor",
-              })} className="border border-gray-300 rounded-lg w-full p-3 focus:ring-2 focus:ring-blue-400 focus:outline-none" />
-              {errors.confirmPassword && <p className="text-red-500 text-sm">{errors.confirmPassword.message}</p>}
+              })} className="border border-gray-300 rounded-xl w-full p-3 focus:ring-2 focus:ring-blue-400 focus:outline-none transition-all duration-300"
+              />
+              {errors.confirmPassword && <p className="text-red-500 text-sm mt-1">{errors.confirmPassword.message}</p>}
             </div>
             <div>
-              <label className="block font-medium text-gray-700">Rol</label>
-              <select {...register("role_id")} onChange={(e) => setSelectedRole(e.target.value)} className="border border-gray-300 rounded-lg w-full p-3 focus:ring-2 focus:ring-blue-400 focus:outline-none">
+              <label className="block text-gray-700 font-semibold mb-1">Rol</label>
+              <select {...register("role_id")} onChange={(e) => setSelectedRole(e.target.value)} 
+                className="border border-gray-300 rounded-xl w-full p-3 focus:ring-2 focus:ring-blue-400 focus:outline-none transition-all duration-300"
+              >
                 {roles.map((role) => (
                   <option key={role.id} value={role.id}>
                     {role.name}
@@ -106,22 +114,21 @@ export default function SignupForm() {
                 ))}
               </select>
             </div>
-            {selectedRole === "3" && (
-              <>
-                <div>
-                  <label className="block font-medium text-gray-700">Mağaza Adı</label>
-                  <input type="text" {...register("store_name", { required: "Bu alan zorunludur", minLength: 3 })} className="border border-gray-300 rounded-lg w-full p-3 focus:ring-2 focus:ring-blue-400 focus:outline-none" />
-                </div>
-                <div>
-                  <label className="block font-medium text-gray-700">Telefon</label>
-                  <input type="tel" {...register("store_phone", { required: "Bu alan zorunludur", pattern: /^[0-9]{10}$/ })} className="border border-gray-300 rounded-lg w-full p-3 focus:ring-2 focus:ring-blue-400 focus:outline-none" />
-                </div>
-              </>
-            )}
-            <button type="submit" disabled={isSubmitting} className="w-full bg-blue-500 text-white py-3 rounded-xl font-semibold hover:bg-blue-600 transition-all duration-300">
+            <button type="submit" disabled={isSubmitting} 
+              className="w-full bg-blue-500 text-white py-3 rounded-xl font-semibold hover:bg-blue-600 transition-all duration-300"
+            >
               {isSubmitting ? "Gönderiliyor..." : "Kayıt Ol"}
             </button>
           </form>
+          <div className="text-center mt-6">
+            <p className="text-gray-600">Zaten bir hesabınız var mı?</p>
+            <button
+              onClick={() => navigate("/login")}
+              className="mt-2 bg-gray-800 text-white px-5 py-2 rounded-xl font-semibold hover:bg-gray-900 transition-all duration-300"
+            >
+              Giriş Yap
+            </button>
+          </div>
         </div>
       </div>
     </div>

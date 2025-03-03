@@ -21,7 +21,7 @@ function Header() {
       </nav>
       <div className="flex space-x-4 ml-[90px] items-center">
         {/* Login/Register Butonu */}
-        <Link to="/roles">
+        <Link to="/signup">
           <button className="flex items-center space-x-2 bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition">
             <FaUser />
             <span>Login/Register</span>

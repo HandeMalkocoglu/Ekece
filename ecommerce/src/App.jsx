@@ -3,6 +3,7 @@ import HomePage from "./pages/HomePage";
 import ShopPage from "./pages/ShopPage";
 import ProductDetailPage from "./pages/ProductDetailPage";
 import SignupForm from "./components/SignupForm";
+import LoginForm from "./components/LoginForm";
 
 function App() {
   return (
@@ -12,7 +13,8 @@ function App() {
         <Route path="/home" element={<HomePage />} />
         <Route path="/shop" element={<ShopPage />} />
         <Route path="/ProductDetailPage" element={<ProductDetailPage />} />
-        <Route path="/roles" element={<SignupForm />} />
+        <Route path="/signup" element={<SignupForm />} />
+        <Route path="/login" element={<LoginForm />} />
         {/* <Route path="/shop" element={<ShopPage />} /> */}
         {/* <Route path="/contact" element={<ContactPage />} /> */}
       </Routes>
